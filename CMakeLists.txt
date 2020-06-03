@@ -1,4 +1,4 @@
-project(codal-microbit-nrfsdk)
+project(codal-microbit-nrf5sdk)
 
 # codal-nrf52 includes
 
@@ -207,7 +207,7 @@ include_directories(${INCLUDE_DIRS})
 include_directories(${INCLUDE_SDK_DIRS})
 
 # create our target
-add_library(codal-microbit-nrfsdk ${SOURCE_FILES})
+add_library(codal-microbit-nrf5sdk ${SOURCE_FILES})
 
 # expose it to parent cmake.
-target_include_directories(codal-microbit-nrfsdk PUBLIC ${INCLUDE_DIRS})
+target_include_directories(codal-microbit-nrf5sdk PUBLIC ${INCLUDE_DIRS})
