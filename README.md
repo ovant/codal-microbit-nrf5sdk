@@ -2,7 +2,7 @@
 
 A repo containing the files that CODAL requires of the nRF5SDK for our BLE implementation.
 
-** THIS IS NOT A MIRROR OF THE Nordic SDK. It will probably be missing many files. We are intentionally keeping this lean. **
+***THIS IS NOT A MIRROR OF THE Nordic SDK. It will probably be missing many files. We are intentionally keeping this lean.***
 
 ## Modifying this library
 
