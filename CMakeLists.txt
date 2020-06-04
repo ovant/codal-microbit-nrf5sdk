@@ -211,3 +211,4 @@ add_library(codal-microbit-nrf5sdk ${SOURCE_FILES})
 
 # expose it to parent cmake.
 target_include_directories(codal-microbit-nrf5sdk PUBLIC ${INCLUDE_DIRS})
+target_include_directories(codal-microbit-nrf5sdk PUBLIC ${INCLUDE_SDK_DIRS})
