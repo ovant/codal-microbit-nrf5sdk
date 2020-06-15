@@ -51,7 +51,7 @@ list(APPEND INCLUDE_SDK_DIRS
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/sortlist"
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/strerror"
     "${SDK_DIRECTORY}/nRF5SDK/components/softdevice/common"
-    "${SDK_DIRECTORY}/nRF5SDK/components/libraries/crc16"
+    "${SDK_DIRECTORY}/nRF5SDK/components/libraries/crc32"
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/bootloader/dfu"
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/util"
     "${SDK_DIRECTORY}/nRF5SDK/components/ble/common"
@@ -151,6 +151,7 @@ list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/timer/ap
 list(APPEND SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/nRF5SDK_mods/drv_rtc.c")
 
 #list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/crc16/crc16.c")
+list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/crc32/crc32.c")
 
 list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/fds/fds.c")
 
