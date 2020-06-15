@@ -4,7 +4,7 @@ A repo containing the files that CODAL requires of the nRF5SDK for our BLE imple
 
 ***THIS IS NOT A MIRROR OF THE Nordic SDK. It will probably be missing many files. We are intentionally keeping this lean.***
 
-## Modifying this library
+## Modifying this library - Currently broken see [issue #3](https://github.com/microbit-foundation/codal-microbit-nrf5sdk/issues/3)
 
 If a new header or source file from the SDK is required for future CODAL micro:bit development:
 
