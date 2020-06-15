@@ -5,28 +5,8 @@ set( SUPPORT_NRF_LOG True)
 
 # codal-nrf52 includes
 
-string(FIND "${device.processor}" "NRF52840" pos40)
-string(FIND "${device.processor}" "NRF52833" pos33)
-if (NOT "${pos40}" STREQUAL "-1")
-    set(TEMPLATE "nRF52840")
-    set(DEV "nrf52840")
-else()
-if (NOT "${pos33}" STREQUAL "-1")
-    set(TEMPLATE "nRF52833")
-    set(DEV "nrf52833")
-else()
-    set(TEMPLATE "nRF52832")
-    set(DEV "nrf52")
-endif()
-endif()
-
 list(APPEND INCLUDE_DIRS
-    "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/inc"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/inc/cmsis"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/nrfx/mdk"
     "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/nrfx/hal"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/nrfx"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../codal-nrf52/nrfx/templates/${TEMPLATE}"
 )
 
 
@@ -266,6 +246,7 @@ add_library(codal-microbit-nrf5sdk ${SOURCE_FILES})
 
 target_link_libraries(
     codal-microbit-nrf5sdk
+    codal-nrf52
     codal-core
 )
 
