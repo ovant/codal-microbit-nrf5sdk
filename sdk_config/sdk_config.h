@@ -954,7 +954,14 @@
  
 
 #ifndef CRC16_ENABLED
-#define CRC16_ENABLED 1
+#define CRC16_ENABLED 0
+#endif
+
+// <q> CRC32_ENABLED  - crc32 - CRC32 calculation routines
+ 
+
+#ifndef CRC32_ENABLED
+#define CRC32_ENABLED 1
 #endif
 
 // <e> FDS_ENABLED - fds - Flash data storage module
