@@ -529,14 +529,18 @@ ret_code_t app_timer_init(void)
         .interrupt_priority = APP_TIMER_CONFIG_IRQ_PRIORITY
     };
 
+    // nRF5SDK_mods
+    // For codal-nrf52 nrfx compatibility
+    // codal-nrf52 nrfx_glue doesn't define NRFX_SUCCESS and NRFX_ERROR_xxx as equal to the NRF_ equivalents
+    // So replace 2 uses of NRFX_SUCCESS with NRF_SUCCESS
     err_code = NRF_ATFIFO_INIT(m_req_fifo);
-    if (err_code != NRFX_SUCCESS)
+    if (err_code != NRF_SUCCESS)
     {
         return err_code;
     }
 
     err_code = drv_rtc_init(&m_rtc_inst, &config, rtc_irq);
-    if (err_code != NRFX_SUCCESS)
+    if (err_code != NRF_SUCCESS)
     {
         return err_code;
     }

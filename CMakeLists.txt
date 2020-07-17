@@ -127,7 +127,7 @@ list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/util/app
 
 #list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/scheduler/app_scheduler.c")
 
-list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/timer/app_timer2.c")
+list(APPEND SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/nRF5SDK_mods/app_timer2.c")
 list(APPEND SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/nRF5SDK_mods/drv_rtc.c")
 
 #list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/libraries/crc16/crc16.c")
