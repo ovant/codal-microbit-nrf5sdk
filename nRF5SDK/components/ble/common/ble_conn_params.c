@@ -69,12 +69,14 @@ typedef struct
     ble_gap_conn_params_t preferred_conn_params; //!< The desired connection parameters for this link.
 } ble_conn_params_instance_t;
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
 static app_timer_t                m_timer_data[NRF_BLE_CONN_PARAMS_INSTANCE_COUNT] = {{{0}}};          //!< Data needed for timers.
 static ble_conn_params_instance_t m_conn_params_instances[NRF_BLE_CONN_PARAMS_INSTANCE_COUNT] = {{0}}; //!< Configuration data for each connection.
 static ble_conn_params_init_t     m_conn_params_config;                                                //!< Configuration as provided by the application during intialization.
 static ble_gap_conn_params_t      m_preferred_conn_params;                                             //!< The preferred connection parameters as specified during initialization.
 //lint -esym(551, m_preferred_conn_params) "Not accessed"
-
+#pragma GCC diagnostic pop
 
 /**@brief Function for retrieving the conn_params instance belonging to a conn_handle
  *

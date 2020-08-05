@@ -748,7 +748,9 @@ void gcm_ble_evt_handler(ble_evt_t const * p_ble_evt)
                 }
                 else
                 {
-                    ret_code_t err_code = sd_ble_gattc_read(conn_handle, *(uint16_t*)p_val->handle_value, 0);
+                    uint16_t handle_value;
+                    memcpy(&handle_value, p_val->handle_value, sizeof(uint16_t));
+                    ret_code_t err_code = sd_ble_gattc_read(conn_handle, handle_value, 0);
                     if (err_code == NRF_SUCCESS)
                     {
                         handle_found = true;
