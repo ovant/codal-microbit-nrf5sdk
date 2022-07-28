@@ -140,12 +140,6 @@
 // <h> Board Support 
 
 //==========================================================
-// <q> BSP_BTN_BLE_ENABLED  - bsp_btn_ble - Button Control for BLE
- 
-
-#ifndef BSP_BTN_BLE_ENABLED
-#define BSP_BTN_BLE_ENABLED 1
-#endif
 
 // </h> 
 //==========================================================
@@ -4788,12 +4782,7 @@
 #define BLE_TPS_BLE_OBSERVER_PRIO 2
 #endif
 
-// <o> BSP_BTN_BLE_OBSERVER_PRIO  
-// <i> Priority with which BLE events are dispatched to the Button Control module.
 
-#ifndef BSP_BTN_BLE_OBSERVER_PRIO
-#define BSP_BTN_BLE_OBSERVER_PRIO 1
-#endif
 
 // <o> NFC_BLE_PAIR_LIB_BLE_OBSERVER_PRIO  
 // <i> Priority with which BLE events are dispatched to the NFC pairing library.
