@@ -373,7 +373,7 @@ void nrf_ble_scan_stop(void);
  * @retval NRF_ERROR_INVALID_PARAM  If the filter mode is incorrect. Available filter modes: @ref NRF_BLE_SCAN_FILTER_MODE.
  * @retval NRF_ERROR_NULL           If a NULL pointer is passed as input.
  */
-ret_code_t nrf_ble_scan_filters_enable(nrf_ble_scan_t * const p_scan_ctx,
+static ret_code_t nrf_ble_scan_filters_enable(nrf_ble_scan_t * const p_scan_ctx,
                                        uint8_t                mode,
                                        bool                   match_all);
 

@@ -735,7 +735,7 @@ ret_code_t nrf_ble_scan_all_filter_remove(nrf_ble_scan_t * const p_scan_ctx)
 }
 
 
-ret_code_t nrf_ble_scan_filters_enable(nrf_ble_scan_t * const p_scan_ctx,
+static ret_code_t nrf_ble_scan_filters_enable(nrf_ble_scan_t * const p_scan_ctx,
                                        uint8_t                mode,
                                        bool                   match_all)
 {
