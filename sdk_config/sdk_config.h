@@ -5018,6 +5018,13 @@
 #define NRF_BLE_SCAN_SCAN_DURATION 0
 #endif
 
+
+// <o> NRF_BLE_SCAN_BUFFER - Data length for an advertising set. 
+#ifndef NRF_BLE_SCAN_BUFFER
+#define NRF_BLE_SCAN_BUFFER 31
+#endif
+
+
 // </h> 
 //==========================================================
 
