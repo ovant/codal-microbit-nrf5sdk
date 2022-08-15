@@ -63,8 +63,8 @@ list(APPEND INCLUDE_SDK_DIRS
 
 list(APPEND INCLUDE_SDK_DIRS
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/log"
-    "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_gatt"
     "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_scan"
+    "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_gatt"
 )
 
 list(APPEND INCLUDE_SDK_DIRS
@@ -187,8 +187,9 @@ list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/common/ble_con
 list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/common/ble_conn_state.c")
 list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/common/ble_srv_common.c")
 
-list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_gatt/nrf_ble_gatt.c")
 list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_scan/nrf_ble_scan.c")
+list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_gatt/nrf_ble_gatt.c")
+
 
 #list(APPEND SOURCE_FILES "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_qwr/nrf_ble_qwr.c")
 
