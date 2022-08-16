@@ -64,6 +64,7 @@ list(APPEND INCLUDE_SDK_DIRS
 list(APPEND INCLUDE_SDK_DIRS
     "${SDK_DIRECTORY}/nRF5SDK/components/libraries/log"
     "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_gatt"
+    "${SDK_DIRECTORY}/nRF5SDK/components/ble/nrf_ble_scan"
 )
 
 list(APPEND INCLUDE_SDK_DIRS
@@ -254,3 +255,4 @@ target_link_libraries(
 # expose it to parent cmake.
 target_include_directories(codal-microbit-nrf5sdk PUBLIC ${INCLUDE_DIRS})
 target_include_directories(codal-microbit-nrf5sdk PUBLIC ${INCLUDE_SDK_DIRS})
+
