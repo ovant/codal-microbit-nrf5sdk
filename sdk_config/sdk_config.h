@@ -4991,6 +4991,17 @@
 #define NRF_BLE_QWR_BLE_OBSERVER_PRIO 2
 #endif
 
+#ifndef DEVICE_BLE
+#define DEVICE_BLE 1
+#endif
+
+
+// <e> NRF_BLE_SCAN_ENABLED - nrf_ble_scan - Scanning Module
+//==========================================================
+#ifndef NRF_BLE_SCAN_ENABLED
+#define NRF_BLE_SCAN_ENABLED 1
+#endif
+
 // <o> NRF_BLE_SCAN_OBSERVER_PRIO  
 // <i> Priority for dispatching the BLE events to the Scanning Module.
 
@@ -5278,4 +5289,5 @@
 
 // <<< end of configuration section >>>
 #endif //SDK_CONFIG_H
+
 
