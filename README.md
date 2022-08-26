@@ -2,6 +2,8 @@
 
 A repo containing the files that CODAL requires of the nRF5SDK for our BLE implementation.
 
+This is a fork of the [original from Micro:bit](https://github.com/microbit-foundation/codal-microbit-nrf5sdk). It uses the S140 SoftDevice (instead of the S113) and has the SDK files related to the scanning module.
+
 ***THIS IS NOT A MIRROR OF THE Nordic SDK. It will probably be missing many files. We are intentionally keeping this lean.***
 
 ## Modifying this library - Currently broken see [issue #3](https://github.com/microbit-foundation/codal-microbit-nrf5sdk/issues/3)
